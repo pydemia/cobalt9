@@ -25,12 +25,12 @@ Cobalt9의 기본 인상이다.
 | 타입 참조 | `#FFDD00` | Cobalt9 library class |
 | 함수 선언 | `#F92672` | Cobalt9 function name |
 | 함수·메서드 호출 | `#FFC600` | Cobalt9 Python generic call |
-| 변수 | `#FB94FF` | Cobalt9 variable |
-| 매개변수 | `#F4ABA4` | Cobalt9 function argument |
-| 프로퍼티 | `#FFDBC7` | Cobalt9 Java object property |
+| 변수 | `#FFFFFF` | Cobalt9 기본 전경 |
+| 매개변수 | `#FFFFFF` | Cobalt9 기본 전경 |
+| 프로퍼티 | `#FFFFFF` | Cobalt9 기본 전경 |
 | 숫자 | `#FB71A3` | Cobalt9 VS Code number |
 | 내장 상수 | `#FF628C` | Cobalt9 built-in constant |
-| 연산자 | `#F8F8F8` | Cobalt9 bracket/text 계열 |
+| 연산자 | `#B267E6` | Cobalt9 debug token 보라 |
 | escape·정규식 | `#06A6A8` | Cobalt9 character/regexp |
 
 선언과 사용 위치에 같은 구문 범주가 붙는 경우를 구분하려고 VS Code
@@ -43,3 +43,10 @@ Vim과 Neovim은 Cobalt9 배경을 유지하고 위 구문 색에 맞췄다. iTe
 ANSI 16색은 VS Code 1.4.2의 원래 terminal 색을 사용한다. 따라서
 각 프로그램에서 사용할 수 있는 구문 그룹의 범위는 다르지만,
 공통 역할에 새 색상 계열을 추가하지 않았다.
+
+## 2026-09-30 조정
+
+변수, 인스턴스 이름, 매개변수, 프로퍼티는 흰색 `#FFFFFF`로 맞췄다.
+함수·클래스 선언과 호출·타입 참조의 구분은 유지한다. `*`, `<=`처럼
+구문을 연결하는 연산자는 기존 팔레트의 보라색 `#B267E6`로 표시한다.
+괄호·쉼표·점·세미콜론은 흰색 계열로 두어 연산자와 구분한다.
