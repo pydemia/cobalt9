@@ -69,3 +69,13 @@ Python 함수 선언의 매개변수 이름과 호출의 키워드 인자 이름
 호출은 `#FFC600`에서 진한 노랑 `#E2B40D`로 조정했다. 클래스 선언
 `#D7BA7D`와는 채도 차이를 두고, statement 주황 `#FF9D00`과도
 색조를 분리했다. Vim의 UI 노랑은 변경하지 않고 구문 색만 조정했다.
+
+## 배포 상태 (2026-10-01)
+
+VS Code 1.5.5는 Marketplace에 게시했다. JetBrains 1.2.4는
+Marketplace에 업로드했으며 현재 `Under review` 상태다. 최종 색상을
+적용한 IntelliJ Java·JSON 화면을 JetBrains 갤러리의 첫 두 장으로
+등록했다. JetBrains 등록 화면과 심사 상태는
+[`jetbrains-final-gallery.png`](jetbrains-final-gallery.png),
+[`jetbrains-1.2.4-under-review.png`](jetbrains-1.2.4-under-review.png)에
+기록했다.
