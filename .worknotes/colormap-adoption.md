@@ -50,3 +50,22 @@ ANSI 16색은 VS Code 1.4.2의 원래 terminal 색을 사용한다. 따라서
 함수·클래스 선언과 호출·타입 참조의 구분은 유지한다. `*`, `<=`처럼
 구문을 연결하는 연산자는 기존 팔레트의 보라색 `#B267E6`로 표시한다.
 괄호·쉼표·점·세미콜론은 흰색 계열로 두어 연산자와 구분한다.
+
+## 2026-10-01 조정
+
+Python 함수 선언의 매개변수 이름과 호출의 키워드 인자 이름에는 기존
+팔레트의 살구색 `#F4ABA4`를 사용한다. VS Code에서는 Pylance의
+`parameter.declaration`, `parameter.keywordArgument` semantic token과
+해당 TextMate scope를 지정한다. 일반 변수와 매개변수 참조는 흰색으로
+둔다. JetBrains에서는 `PY.PARAMETER`와 `PY.KEYWORD_ARGUMENT`를
+지정한다. JetBrains의 `PY.PARAMETER`는 선언과 참조를 별도 색으로
+나누지 못할 수 있다. Vim 기본 Python syntax에는 두 이름을 구분하는
+그룹이 없어 기존 흰색을 유지한다.
+
+연산자는 `#B267E6`에서 약간 밝힌 `#BA76E9`로 조정했다. 기존
+`token.debug-token` 색은 연산자가 아니므로 바꾸지 않았다.
+
+타입 참조는 `#FFDD00`에서 선명한 노랑 `#E5CA48`로, 함수·메서드
+호출은 `#FFC600`에서 진한 노랑 `#E2B40D`로 조정했다. 클래스 선언
+`#D7BA7D`와는 채도 차이를 두고, statement 주황 `#FF9D00`과도
+색조를 분리했다. Vim의 UI 노랑은 변경하지 않고 구문 색만 조정했다.
